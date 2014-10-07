@@ -1,5 +1,5 @@
-$programFiles = $env:ProgramFiles
-$installFolder = "$programFiles\java"
+$programData = $env:ProgramData
+$installFolder = "$programData\java"
 Write-Host "Removing folder $installFolder"
 Remove-Item $installFolder -force -recurse
 

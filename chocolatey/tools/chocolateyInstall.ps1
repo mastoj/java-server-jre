@@ -1,7 +1,7 @@
 $packageName = 'java-server-jre' 
 $url = 'https://github.com/mastoj/java-server-jre/raw/master/releases/jdk1.7.0_67.zip'
-$programFiles = $env:ProgramFiles
-$installFolder = "$programFiles\java"
+$programData = $env:ProgramData
+$installFolder = "$programData\java"
 
 Install-ChocolateyZipPackage "$packageName" "$url" "$installFolder"
 $java_home = "$installFolder\jdk1.7.0_67"
